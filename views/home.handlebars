@@ -1,0 +1,18 @@
+<h1>Super News</h1>
+<section>
+    {{#articles}}
+    <a href="article/{{fileName}}">
+        <article class="article-teaser">
+            <div class="article-teaser__image">
+                <img src="{{url}}">
+            </div>
+            <div class="article-teaser__headline">
+                <h2>{{headline}}</h2>
+            </div>
+            <div class="article-teaser__text">
+                <p>{{teaser}}</p>
+            </div>
+        </article>
+        </a>
+    {{/articles}}
+</section>

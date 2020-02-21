@@ -1,0 +1,19 @@
+{{#with article}}
+
+<img src="{{teaserImageUrl}}">
+<h1>{{headline}}</h1>
+<h2>{{subHeadline}}</h2>
+<em>{{author}}</em>
+<em>{{datePublished}}</em>
+<main>
+    {{#sections}}
+        {{#if text}}
+            <p>{{text}}</p>
+        {{/if}}
+        {{#if imageUrl}}
+            <img src="{{imageUrl}}">
+            <em>{{caption}}</em>
+        {{/if}}
+    {{/sections}}
+</main>
+{{/with}}
